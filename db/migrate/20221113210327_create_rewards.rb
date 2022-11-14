@@ -6,7 +6,7 @@ class CreateRewards < ActiveRecord::Migration[6.1]
       t.integer :strength_boost
       t.integer :agility_boost
       t.integer :intellect_boost
-      t.integer :character_id
+      t.integer :hero_id
       t.integer :monster_id
     end
   end
