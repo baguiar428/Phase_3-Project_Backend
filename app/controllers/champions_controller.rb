@@ -7,9 +7,9 @@ class ChampionsController < ApplicationController
 
     post '/champions/new' do
         champion = Champion.create(
-            name: params[:name]
-            spec: params[:spec]
-            wins: params[:wins]
+            name: params[:name],
+            spec: params[:spec],
+            wins: params[:wins],
             image_URL: params[:image_URL]
             )
         champion.to_json    

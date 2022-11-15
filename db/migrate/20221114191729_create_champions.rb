@@ -4,6 +4,7 @@ class CreateChampions < ActiveRecord::Migration[6.1]
       t.string :name
       t.integer :wins
       t.string :image_URL
+      t.timestamps
       end
   end
 end
