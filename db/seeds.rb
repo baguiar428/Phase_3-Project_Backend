@@ -11,17 +11,17 @@ puts "🌱 Destroying Rewards..."
 Reward.destroy_all
 
 
-puts "🌱 Seeding Heroes..."
-Hero.create(
-    name: "", 
-    spec: "spec", 
-    health: nil, 
-    strength: nil, 
-    agility: nil, 
-    intellect: nil,
-    wins: nil,
-    image_URL: nil
-    )
+# puts "🌱 Seeding Heroes..."
+# Hero.create(
+#     name: "", 
+#     spec: "spec", 
+#     health: nil, 
+#     strength: nil, 
+#     agility: nil, 
+#     intellect: nil,
+#     wins: nil,
+#     image_URL: nil
+#     )
     
 
 puts "🌱 Seeding Maps..."
@@ -39,7 +39,7 @@ Monster.create(
     strength: "7", 
     agility: "7", 
     intellect: "7",
-    map_id: 11,
+    map_id: Map.first.id,
     defeated?: false
     )
 
@@ -49,7 +49,7 @@ Monster.create(
     strength: "5", 
     agility: "7", 
     intellect: "3",
-    map_id: 11,
+    map_id: Map.first.id,
     defeated?: false
     )    
 
@@ -60,7 +60,7 @@ Monster.create(
     strength: "8", 
     agility: "1", 
     intellect: "8",
-    map_id: 11,
+    map_id: Map.first.id,
     defeated?: false
     )
         
@@ -70,7 +70,7 @@ Monster.create(
     strength: "10", 
     agility: "3", 
     intellect: "3",
-    map_id: 12,
+    map_id: Map.second.id,
     defeated?: false
     )
 
@@ -80,7 +80,7 @@ Monster.create(
     strength: "1", 
     agility: "10", 
     intellect: "1",
-    map_id: 12,
+    map_id: Map.second.id,
     defeated?: false
     )
 
@@ -90,7 +90,7 @@ Monster.create(
     strength: "2", 
     agility: "8", 
     intellect: "10",
-    map_id: 12,
+    map_id: Map.second.id,
     defeated?: false
     )
 
@@ -100,7 +100,7 @@ Monster.create(
     strength: "7", 
     agility: "7", 
     intellect: "7",
-    map_id: 13,
+    map_id: Map.third.id,
     defeated?: false
     )
 
@@ -110,7 +110,7 @@ Monster.create(
     strength: "3", 
     agility: "1", 
     intellect: "1",
-    map_id: 13,
+    map_id: Map.third.id,
     defeated?: false
     )
 
@@ -120,7 +120,7 @@ Monster.create(
     strength: "4", 
     agility: "6", 
     intellect: "9",
-    map_id: 13,
+    map_id: Map.third.id,
     defeated?: false
     )
 
@@ -130,7 +130,7 @@ Monster.create(
     strength: "7", 
     agility: "6", 
     intellect: "6",
-    map_id: 14,
+    map_id: Map.fourth.id,
     defeated?: false
     )
 
@@ -140,7 +140,7 @@ Monster.create(
     strength: "4", 
     agility: "5", 
     intellect: "8",
-    map_id: 14,
+    map_id: Map.fourth.id,
     defeated?: false
     )
 
@@ -150,7 +150,7 @@ Monster.create(
     strength: "4", 
     agility: "5", 
     intellect: "1",
-    map_id: 14,
+    map_id: Map.fourth.id,
     defeated?: false
     )
 
@@ -160,7 +160,7 @@ Monster.create(
     strength: "5", 
     agility: "7", 
     intellect: "6",
-    map_id: 15,
+    map_id: Map.fifth.id,
     defeated?: false
     )
 
@@ -170,7 +170,7 @@ Monster.create(
     strength: "7", 
     agility: "6", 
     intellect: "6",
-    map_id: 15,
+    map_id: Map.fifth.id,
     defeated?: false
     )
 
@@ -180,7 +180,7 @@ Monster.create(
     strength: "7", 
     agility: "1", 
     intellect: "4",
-    map_id: 15,
+    map_id: Map.fifth.id,
     defeated?: false
     )
 
