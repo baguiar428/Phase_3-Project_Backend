@@ -10,6 +10,11 @@ class MapsController < ApplicationController
         map.to_json
     end
 
+    patch '/maps/:id' do
+        map = Map.find(params[:id])
+        map.played?
+    end
+
     # patch '/maps/:id' do
     #     defeated 
 end
