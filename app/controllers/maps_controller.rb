@@ -7,12 +7,12 @@ class MapsController < ApplicationController
 
     get '/maps/:id' do
         map = Map.find(params[:id])
-        map.to_json
+        map.to_json(include: {monsters: {include: :rewards}})
     end
 
     patch '/maps/:id' do
         map = Map.find(params[:id])
-        map.played?
+        map.update(played?: true)
     end
 
     # patch '/maps/:id' do
