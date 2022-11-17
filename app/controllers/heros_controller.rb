@@ -5,6 +5,19 @@ class HerosController < ApplicationController
         heros.to_json
     end
 
+    get '/heros/:id' do
+        heros = Hero.all(
+            name: params[:name],
+            spec: params[:spec],
+            health: params[:health],
+            strength: params[:strength],
+            agility: params[:agility],
+            intellect: params[:intellect],
+            wins: params[:wins]           
+        )
+        hero.to_json
+    end
+
     post '/heros' do
         hero = Hero.create(
             name: params[:name],
