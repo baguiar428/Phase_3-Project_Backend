@@ -25,20 +25,21 @@ Reward.destroy_all
     
 
 puts "🌱 Seeding Maps..."
-Map.create(name: "The Sea of Peril", image_URL: "TheSeaofPeril", played: false)
+Map.create(name: "Sea of Peril", image_URL: "TheSeaofPeril", played: false)
 Map.create(name: "Skypia", image_URL: "Skypia", played: false)
 Map.create(name: "Mount Doom", image_URL: "MountDoom", played: false)
-Map.create(name: "The Halls of Stone", image_URL: "TheHallsofStone", played:false )
-Map.create(name: "The Dark Woods", image_URL: "TheDarkWoods", played: false)
+Map.create(name: "Halls of Stone", image_URL: "TheHallsofStone", played:false )
+Map.create(name: "Dark Woods", image_URL: "TheDarkWoods", played: false)
+Map.create(name: "Diamond Depths", image_URL: "DiamondDepths", played: false)
     
 puts "🌱 Seeding Monsters..."
 
 Monster.create(
     name: "Spout Dragon", 
     health: "30", 
-    strength: "7", 
-    agility: "7", 
-    intellect: "7",
+    strength: "5", 
+    agility: "4", 
+    intellect: "4",
     map_id: Map.first.id,
     defeated: false
     )
@@ -46,9 +47,9 @@ Monster.create(
 Monster.create(
     name: "Crock-O-Delicous", 
     health: "20", 
-    strength: "5", 
-    agility: "7", 
-    intellect: "3",
+    strength: "4", 
+    agility: "5", 
+    intellect: "2",
     map_id: Map.first.id,
     defeated: false
     )    
