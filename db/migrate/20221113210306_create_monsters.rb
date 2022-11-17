@@ -8,6 +8,7 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
       t.integer :intellect
       t.integer :map_id
       t.boolean :defeated
+      t.string :image
     end
   end
 end

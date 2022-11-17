@@ -41,7 +41,8 @@ Monster.create(
     agility: "5", 
     intellect: "5",
     map_id: Map.first.id,
-    defeated: false
+    defeated: false,
+    image: "SpoutDragon"
     )
 
 Monster.create(
@@ -51,7 +52,8 @@ Monster.create(
     agility: "5", 
     intellect: "2",
     map_id: Map.first.id,
-    defeated: false
+    defeated: false,
+    image: "Crock-o-Delicous"
     )    
 
     
@@ -62,7 +64,8 @@ Monster.create(
     agility: "4", 
     intellect: "8",
     map_id: Map.first.id,
-    defeated: false
+    defeated: false,
+    image: "Kraken"
     )
         
 Monster.create(
@@ -72,7 +75,8 @@ Monster.create(
     agility: "5", 
     intellect: "5",
     map_id: Map.second.id,
-    defeated: false
+    defeated: false,
+    image: "SwiftSpirit"
     )
 
 Monster.create(
@@ -82,17 +86,19 @@ Monster.create(
     agility: "10", 
     intellect: "5",
     map_id: Map.second.id,
-    defeated: false
+    defeated: false,
+    image: "RazorBeak"
     )
 
 Monster.create(
-    name: "BOSS: Flying Mastadon", 
+    name: "BOSS: Flying Mastodon", 
     health: "40", 
     strength: "10", 
     agility: "8", 
     intellect: "10",
     map_id: Map.second.id,
-    defeated: false
+    defeated: false,
+    image: "FlyingMastodon"
     )
 
 Monster.create(
@@ -102,7 +108,8 @@ Monster.create(
     agility: "6", 
     intellect: "8",
     map_id: Map.third.id,
-    defeated: false
+    defeated: false,
+    image: "FireSprite"
     )
 
 Monster.create(
@@ -112,7 +119,8 @@ Monster.create(
     agility: "4", 
     intellect: "4",
     map_id: Map.third.id,
-    defeated: false
+    defeated: false,
+    image: "LavaBlob"
     )
 
 Monster.create(
@@ -122,7 +130,8 @@ Monster.create(
     agility: "9", 
     intellect: "10",
     map_id: Map.third.id,
-    defeated: false
+    defeated: false,
+    image: "FireDragon"
     )
 
 Monster.create(
@@ -132,7 +141,8 @@ Monster.create(
     agility: "6", 
     intellect: "2",
     map_id: Map.fourth.id,
-    defeated: false
+    defeated: false,
+    image: "RockLobster"
     )
 
 Monster.create(
@@ -142,7 +152,8 @@ Monster.create(
     agility: "1", 
     intellect: "1",
     map_id: Map.fourth.id,
-    defeated: false
+    defeated: false,
+    image: "Golem"
     )
 
 Monster.create(
@@ -152,7 +163,8 @@ Monster.create(
     agility: "9", 
     intellect: "2",
     map_id: Map.fourth.id,
-    defeated: false
+    defeated: false,
+    image: "Stoner"
     )
 
 Monster.create(
@@ -162,7 +174,8 @@ Monster.create(
     agility: "5", 
     intellect: "5",
     map_id: Map.fifth.id,
-    defeated: false
+    defeated: false,
+    image: "MysticStag"
     )
 
 Monster.create(
@@ -172,7 +185,8 @@ Monster.create(
     agility: "5", 
     intellect: "5",
     map_id: Map.fifth.id,
-    defeated: false
+    defeated: false,
+    image: "MudDragon"
     )
 
 Monster.create(
@@ -182,7 +196,8 @@ Monster.create(
     agility: "1", 
     intellect: "12",
     map_id: Map.fifth.id,
-    defeated: false
+    defeated: false,
+    image: "FuriousEnt"
     )
 
 Monster.create(
@@ -192,7 +207,8 @@ Monster.create(
     agility: "5", 
     intellect: "8",
     map_id: Map.last.id,
-    defeated: false
+    defeated: false,
+    image: "ScaledDragon"
     )
 
 Monster.create(
@@ -202,7 +218,8 @@ Monster.create(
     agility: "3", 
     intellect: "15",
     map_id: Map.last.id,
-    defeated: false
+    defeated: false,
+    image: "ShinyBoi"
     )
 
 Monster.create(
@@ -212,7 +229,8 @@ Monster.create(
     agility: "12", 
     intellect: "12",
     map_id: Map.last.id,
-    defeated: false
+    defeated: false,
+    image: "DiamondKing"
     )
 
 puts "🌱 Seeding Rewards..."

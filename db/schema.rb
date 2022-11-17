@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2022_11_14_191729) do
     t.integer "intellect"
     t.integer "map_id"
     t.boolean "defeated"
+    t.string "image"
   end
 
   create_table "rewards", force: :cascade do |t|
