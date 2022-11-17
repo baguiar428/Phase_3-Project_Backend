@@ -1,7 +1,7 @@
 class HerosController < ApplicationController
 
     get '/heros' do
-        heros = Hero.all
+        heros = Hero.all.order(:wins)
         heros.to_json
     end
 
