@@ -13,8 +13,7 @@ class HerosController < ApplicationController
             strength: params[:strength],
             agility: params[:agility],
             intellect: params[:intellect],
-            wins: params[:wins],
-            image_URL: params[:image_URL]
+            wins: params[:wins]           
         )
         hero.to_json
     end
@@ -22,6 +21,8 @@ class HerosController < ApplicationController
     patch '/heros/:id' do
         hero = Hero.find(params[:id])
         hero.update(
+            name: params[:name],
+            spec: params[:spec],
             health: params[:health],
             strength: params[:strength],
             agility: params[:agility],
