@@ -191,7 +191,7 @@ Monster.create(
     strength: "15", 
     agility: "5", 
     intellect: "8",
-    map_id: Map.fifth.id,
+    map_id: Map.last.id,
     defeated: false
     )
 
@@ -201,7 +201,7 @@ Monster.create(
     strength: "10", 
     agility: "3", 
     intellect: "15",
-    map_id: Map.fifth.id,
+    map_id: Map.last.id,
     defeated: false
     )
 
@@ -211,7 +211,7 @@ Monster.create(
     strength: "12", 
     agility: "12", 
     intellect: "12",
-    map_id: Map.fifth.id,
+    map_id: Map.last.id,
     defeated: false
     )
 
