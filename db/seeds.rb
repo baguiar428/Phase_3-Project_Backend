@@ -25,11 +25,11 @@ Reward.destroy_all
     
 
 puts "🌱 Seeding Maps..."
-Map.create(name: "The Sea of Peril")
-Map.create(name: "Skypia")
-Map.create(name: "Mount Doom")
-Map.create(name: "The Halls of Stone")
-Map.create(name: "The Dark Woods")
+Map.create(name: "The Sea of Peril", image_URL: "TheSeaofPeril", played: false)
+Map.create(name: "Skypia", image_URL: "Skypia", played: false)
+Map.create(name: "Mount Doom", image_URL: "MountDoom", played: false)
+Map.create(name: "The Halls of Stone", image_URL: "TheHallsofStone", played:false )
+Map.create(name: "The Dark Woods", image_URL: "TheDarkWoods", played: false)
     
 puts "🌱 Seeding Monsters..."
 
@@ -40,7 +40,7 @@ Monster.create(
     agility: "7", 
     intellect: "7",
     map_id: Map.first.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -50,7 +50,7 @@ Monster.create(
     agility: "7", 
     intellect: "3",
     map_id: Map.first.id,
-    defeated?: false
+    defeated: false
     )    
 
     
@@ -61,7 +61,7 @@ Monster.create(
     agility: "1", 
     intellect: "8",
     map_id: Map.first.id,
-    defeated?: false
+    defeated: false
     )
         
 Monster.create(
@@ -71,7 +71,7 @@ Monster.create(
     agility: "3", 
     intellect: "3",
     map_id: Map.second.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -81,7 +81,7 @@ Monster.create(
     agility: "10", 
     intellect: "1",
     map_id: Map.second.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -91,7 +91,7 @@ Monster.create(
     agility: "8", 
     intellect: "10",
     map_id: Map.second.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -101,7 +101,7 @@ Monster.create(
     agility: "7", 
     intellect: "7",
     map_id: Map.third.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -111,7 +111,7 @@ Monster.create(
     agility: "1", 
     intellect: "1",
     map_id: Map.third.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -121,7 +121,7 @@ Monster.create(
     agility: "6", 
     intellect: "9",
     map_id: Map.third.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -131,7 +131,7 @@ Monster.create(
     agility: "6", 
     intellect: "6",
     map_id: Map.fourth.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -141,7 +141,7 @@ Monster.create(
     agility: "5", 
     intellect: "8",
     map_id: Map.fourth.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -151,7 +151,7 @@ Monster.create(
     agility: "5", 
     intellect: "1",
     map_id: Map.fourth.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -161,7 +161,7 @@ Monster.create(
     agility: "7", 
     intellect: "6",
     map_id: Map.fifth.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -171,7 +171,7 @@ Monster.create(
     agility: "6", 
     intellect: "6",
     map_id: Map.fifth.id,
-    defeated?: false
+    defeated: false
     )
 
 Monster.create(
@@ -181,7 +181,7 @@ Monster.create(
     agility: "1", 
     intellect: "4",
     map_id: Map.fifth.id,
-    defeated?: false
+    defeated: false
     )
 
 puts "🌱 Seeding Rewards..."

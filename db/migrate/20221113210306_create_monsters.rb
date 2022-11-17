@@ -7,7 +7,7 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
       t.integer :agility
       t.integer :intellect
       t.integer :map_id
-      t.boolean :defeated?
+      t.boolean :defeated
     end
   end
 end

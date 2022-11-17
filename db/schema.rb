@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2022_11_14_191729) do
   create_table "maps", force: :cascade do |t|
     t.string "name"
     t.string "image_URL"
-    t.boolean "played?"
+    t.boolean "played"
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2022_11_14_191729) do
     t.integer "agility"
     t.integer "intellect"
     t.integer "map_id"
-    t.boolean "defeated?"
+    t.boolean "defeated"
   end
 
   create_table "rewards", force: :cascade do |t|
