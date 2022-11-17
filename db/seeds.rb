@@ -36,18 +36,18 @@ puts "🌱 Seeding Monsters..."
 
 Monster.create(
     name: "Spout Dragon", 
-    health: "30", 
+    health: "25", 
     strength: "5", 
-    agility: "4", 
-    intellect: "4",
+    agility: "5", 
+    intellect: "5",
     map_id: Map.first.id,
     defeated: false
     )
 
 Monster.create(
     name: "Crock-O-Delicous", 
-    health: "20", 
-    strength: "4", 
+    health: "25", 
+    strength: "8", 
     agility: "5", 
     intellect: "2",
     map_id: Map.first.id,
@@ -56,39 +56,39 @@ Monster.create(
 
     
 Monster.create(
-    name: "Kraken", 
+    name: "BOSS: Kraken", 
     health: "30", 
     strength: "8", 
-    agility: "1", 
+    agility: "4", 
     intellect: "8",
     map_id: Map.first.id,
     defeated: false
     )
         
 Monster.create(
-    name: "Flying Mastadon", 
-    health: "40", 
+    name: "Swift Spirit", 
+    health: "30", 
     strength: "10", 
-    agility: "3", 
-    intellect: "3",
+    agility: "5", 
+    intellect: "5",
     map_id: Map.second.id,
     defeated: false
     )
 
 Monster.create(
     name: "Razor Beak", 
-    health: "10", 
-    strength: "1", 
+    health: "30", 
+    strength: "5", 
     agility: "10", 
-    intellect: "1",
+    intellect: "5",
     map_id: Map.second.id,
     defeated: false
     )
 
 Monster.create(
-    name: "Swift Spirit", 
-    health: "15", 
-    strength: "2", 
+    name: "BOSS: Flying Mastadon", 
+    health: "40", 
+    strength: "10", 
     agility: "8", 
     intellect: "10",
     map_id: Map.second.id,
@@ -96,31 +96,31 @@ Monster.create(
     )
 
 Monster.create(
-    name: "Fire Dragon", 
-    health: "30", 
-    strength: "7", 
-    agility: "7", 
-    intellect: "7",
+    name: "Fire Sprite", 
+    health: "40", 
+    strength: "8", 
+    agility: "6", 
+    intellect: "8",
     map_id: Map.third.id,
     defeated: false
     )
 
 Monster.create(
     name: "Lava Blob", 
-    health: "50", 
-    strength: "3", 
-    agility: "1", 
-    intellect: "1",
+    health: "40", 
+    strength: "20", 
+    agility: "4", 
+    intellect: "4",
     map_id: Map.third.id,
     defeated: false
     )
 
 Monster.create(
-    name: "Fire Sprite", 
-    health: "15", 
-    strength: "4", 
-    agility: "6", 
-    intellect: "9",
+    name: "BOSS: Fire Dragon", 
+    health: "50", 
+    strength: "15", 
+    agility: "9", 
+    intellect: "10",
     map_id: Map.third.id,
     defeated: false
     )
@@ -130,57 +130,87 @@ Monster.create(
     health: "25", 
     strength: "7", 
     agility: "6", 
-    intellect: "6",
+    intellect: "2",
     map_id: Map.fourth.id,
     defeated: false
     )
 
 Monster.create(
     name: "Golem", 
-    health: "40", 
-    strength: "4", 
-    agility: "5", 
-    intellect: "8",
-    map_id: Map.fourth.id,
-    defeated: false
-    )
-
-Monster.create(
-    name: "Stoner", 
     health: "25", 
-    strength: "4", 
-    agility: "5", 
+    strength: "13", 
+    agility: "1", 
     intellect: "1",
     map_id: Map.fourth.id,
     defeated: false
     )
 
 Monster.create(
+    name: "BOSS: Stoner", 
+    health: "30", 
+    strength: "9", 
+    agility: "9", 
+    intellect: "2",
+    map_id: Map.fourth.id,
+    defeated: false
+    )
+
+Monster.create(
     name: "Mystic Stag", 
-    health: "20", 
-    strength: "5", 
-    agility: "7", 
-    intellect: "6",
+    health: "30", 
+    strength: "10", 
+    agility: "5", 
+    intellect: "5",
     map_id: Map.fifth.id,
     defeated: false
     )
 
 Monster.create(
     name: "Mud Dragon", 
-    health: "25", 
-    strength: "7", 
-    agility: "6", 
-    intellect: "6",
+    health: "30", 
+    strength: "10", 
+    agility: "5", 
+    intellect: "5",
     map_id: Map.fifth.id,
     defeated: false
     )
 
 Monster.create(
-    name: "Furious Ent", 
-    health: "35", 
-    strength: "7", 
+    name: "BOSS: Furious Ent", 
+    health: "40", 
+    strength: "15", 
     agility: "1", 
-    intellect: "4",
+    intellect: "12",
+    map_id: Map.fifth.id,
+    defeated: false
+    )
+
+Monster.create(
+    name: "Scaled Dragon", 
+    health: "40", 
+    strength: "15", 
+    agility: "5", 
+    intellect: "8",
+    map_id: Map.fifth.id,
+    defeated: false
+    )
+
+Monster.create(
+    name: "Shiny Boi", 
+    health: "40", 
+    strength: "10", 
+    agility: "3", 
+    intellect: "15",
+    map_id: Map.fifth.id,
+    defeated: false
+    )
+
+Monster.create(
+    name: "BOSS: Diamond King", 
+    health: "50", 
+    strength: "12", 
+    agility: "12", 
+    intellect: "12",
     map_id: Map.fifth.id,
     defeated: false
     )
