@@ -40,9 +40,9 @@ puts "🌱 Seeding Monsters..."
 Monster.create(
     name: "Spout Dragon", 
     health: "25", 
-    strength: "5", 
-    agility: "5", 
-    intellect: "5",
+    strength: "4", 
+    agility: "4", 
+    intellect: "4",
     map_id: Map.first.id,
     defeated: false,
     image: "SpoutDragon"
@@ -51,8 +51,8 @@ Monster.create(
 Monster.create(
     name: "Crock-O-Delicous", 
     health: "25", 
-    strength: "8", 
-    agility: "5", 
+    strength: "7", 
+    agility: "4", 
     intellect: "2",
     map_id: Map.first.id,
     defeated: false,
@@ -63,9 +63,9 @@ Monster.create(
 Monster.create(
     name: "BOSS: Kraken", 
     health: "30", 
-    strength: "8", 
+    strength: "7", 
     agility: "4", 
-    intellect: "8",
+    intellect: "7",
     map_id: Map.first.id,
     defeated: false,
     image: "Kraken"
@@ -140,7 +140,7 @@ Monster.create(
 Monster.create(
     name: "Rock Lobster", 
     health: "25", 
-    strength: "7", 
+    strength: "5", 
     agility: "6", 
     intellect: "2",
     map_id: Map.fourth.id,
@@ -151,7 +151,7 @@ Monster.create(
 Monster.create(
     name: "Golem", 
     health: "25", 
-    strength: "13", 
+    strength: "11", 
     agility: "1", 
     intellect: "1",
     map_id: Map.fourth.id,
@@ -162,7 +162,7 @@ Monster.create(
 Monster.create(
     name: "BOSS: Stoner", 
     health: "30", 
-    strength: "9", 
+    strength: "8", 
     agility: "9", 
     intellect: "2",
     map_id: Map.fourth.id,
