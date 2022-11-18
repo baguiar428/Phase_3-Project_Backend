@@ -1,7 +1,7 @@
 class ChampionsController < ApplicationController
 
     get '/champions' do
-        champions = Champion.all
+        champions = Champion.all.order(:wins).reverse
         champions.to_json
     end
 
