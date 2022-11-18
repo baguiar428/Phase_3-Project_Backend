@@ -239,7 +239,7 @@ Monster.create(
 puts "🌱 Seeding Rewards..."
 100.times do
     Reward.create(item_name: Faker::Games::Dota.item, 
-    health_boost: rand(0..3), 
+    health_boost: rand(0..15), 
     strength_boost: rand(0..3), 
     agility_boost: rand(0..3), 
     intellect_boost: rand(0..3), 
