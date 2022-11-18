@@ -1,7 +1,7 @@
 class ChampionsController < ApplicationController
 
     get '/champions' do
-        champions = Champions.all
+        champions = Champion.all
         champions.to_json
     end
 
