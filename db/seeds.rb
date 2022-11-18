@@ -1,6 +1,9 @@
 puts "🌱 Destroying Heros..."
 Hero.destroy_all
 
+puts "🌱 Destroying Champions..."
+Champion.destroy_all
+
 puts "🌱 Destroying Monsters..."
 Monster.destroy_all
 
