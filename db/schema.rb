@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2022_11_14_191729) do
 
   create_table "champions", force: :cascade do |t|
     t.string "name"
+    t.string "spec"
     t.integer "wins"
-    t.string "image_URL"
   end
 
   create_table "heros", force: :cascade do |t|

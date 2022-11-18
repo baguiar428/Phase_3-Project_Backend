@@ -9,8 +9,8 @@ class ChampionsController < ApplicationController
         champion = Champion.create(
             name: params[:name],
             spec: params[:spec],
-            wins: params[:wins],
-            )
+            wins: params[:wins]
+        )
         champion.to_json    
     end
 
